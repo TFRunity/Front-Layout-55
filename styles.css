@@ -1,0 +1,217 @@
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+
+.flex-container {
+  border: 10px solid #613c86;
+}
+
+.flex-item {
+  padding: 10px;
+  font: 900 60px "Roboto", sans-serif;
+  color: #fff;
+  text-align:center;
+  text-shadow: 4px 2px 0 rgba(0, 0, 0, 0.2);
+}
+.flex-login {
+  font-size: 20px;
+}
+
+.item-1 {
+  background-image: linear-gradient(45deg, #ff8177, #cf556c);
+}
+
+.item-2 {
+  background: linear-gradient(45deg, #84fab0, #8fd3f4);
+}
+
+.item-3 {
+  background: linear-gradient(45deg, #a6c0fe, #f68084);
+}
+
+.item-4 {
+  background: linear-gradient(45deg, #d4fc79, #96e6a1);
+}
+
+.item-5 {
+  background: linear-gradient(45deg, #43e97b, #38f9d7);
+}
+
+.item-6 {
+  background: linear-gradient(45deg, #a18cd1, #fbc2eb);
+}
+
+.item-7 {
+  background: linear-gradient(45deg, #8e2de2, #4a00e0);
+}
+
+.item-8 {
+  background: linear-gradient(45deg, #e1eec3, #f05053);
+}
+
+/* Custom styles */
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  min-height: 80vh;
+  width: 80%;
+  justify-self: center;
+  position: relative;
+  margin-top: 5%;
+  margin-left: 10%;
+  margin-bottom: 10%;
+  margin-right: 10%;
+}
+
+.flex-item {
+  flex: 1;
+  flex-wrap:  wrap;
+}
+
+@media screen and (max-width: 1000px){
+  .flex-container {
+    flex-direction: column;
+  }
+}
+.nav-class {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  min-height: 10vh;
+  width: 80%;
+  position: relative;
+  margin-top: 3%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.nav-class a {
+  display: flex;
+  justify-content:center;
+}
+.nav-class .left {
+  justify-content: flex-start;
+}
+.nav-class .right {
+  justify-content: flex-end;
+}
+.img-mainboard {
+  display: flex;
+  flex:1;
+  padding: 12px;
+  max-width: 80px;
+  max-height: 80px;
+}
+.nav-min {
+  position: sticky;
+  top: 0%;
+  z-index: 10;
+  backdrop-filter: blur(40px);
+  justify-content:flex-start;
+  width: 100%;
+  margin-left: 0%;
+}
+.main-box {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  box-shadow: rgba(6, 5, 50, 0.1) 0px 4px 30px;
+  padding-left: 12vh;
+  padding-right: 12vh;
+}
+.button-basket {
+  outline: none;
+  border: none;
+  border-radius: 9999px;
+  text-align: center;
+  font-weight: 500;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.5s ease 0.1s;
+  min-width: 100px;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  align-content: center;
+  top: 1.5vh;
+  background-color: orangered;
+  color: white;
+}
+.button-basket:hover {
+  background-color: rgb(255, 175, 3);
+}
+.button-basket[data-size="medium"]{
+  height: 30px;
+  padding: 22px;
+  padding-bottom: 40px;
+  font-size: 22px;
+  line-height: 24px;
+  text-align: center;
+}
+@media screen and (max-height: 900px) {
+  .button-basket[data-size="medium"] {
+    height: 20px;
+    padding: 17px;
+    top: 20%;
+    padding-bottom: 30px;
+    font-size: 17px;
+    line-height: 13px;
+  }
+}
+.right {
+  display: flex;
+  flex: 1;
+}
+.flex-div {
+  display: flex;
+  max-width: 20%;
+  min-width: 10%;
+  flex-wrap: wrap;
+}
+.li-list {
+  display: inline-block;
+  vertical-align: middle;
+}
+.li-list:first-child {
+  display: inline-block;
+  margin-left: 1vh;
+}
+.li-list a {
+  display: inline-block;
+  position: relative;
+  font-family: Dodo, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 500;
+  padding: 2vh;
+  color: black;
+  font-size: 20px;
+  line-height: 1;
+  transition-property: color;
+  transition-duration: 0.5s;
+  transition-delay: 0.2s;
+  top: 2vh;
+  text-decoration: none;
+}
+.li-list a:hover {
+  color: orangered;
+}
+@media screen and (max-height: 900px) {
+  .li-list a {
+    font-size: 15px;
+  }
+}
+section h2 {
+  width: 100%;
+    color: rgb(0, 0, 0);
+    font-family: Dodo, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 700;
+    font-size: 36px;
+    margin: 32px 0px;
+}
